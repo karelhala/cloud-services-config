@@ -249,6 +249,22 @@ details:
         default: true
         title: Infrastructure
 
+edge:
+  title: Edge for RHEL
+  disabled_on_prod: true
+  deployment_repo: https://github.com/RedHatInsights/edge-frontend-build
+  source_repo: https://github.com/RedHatInsights/edge-frontend
+  top_level: true
+  frontend:
+    title: Edge for RHEL
+    paths:
+      - /edge
+      - /edge/groups
+    sub_apps:
+      - id: groups
+        default: true
+        title: Groups
+
 policies:
   title: Policies
   api:
